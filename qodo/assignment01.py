@@ -74,3 +74,14 @@ for line in lineList:
     allDivPts.append(linePts) #append the list of points PER LINE to another list
 
 d = th.list_to_tree(allDivPts) #this is how you output nested lists to gh trees
+
+#5.- apply sine function to points
+#here we will use the sin() the math library to move the points in Z, 
+#it makes sense to follow the logic of group 5. of gh components
+#first, create a nested for loop to iterate the nested list by index (I´ve done that for you)
+#second, transfor the pt to a vector3d
+#third, get the vector length (it´s one of it´s properties)
+#forth, create a variable that will be the magnitude of displacement, by passign the vector length to the math.sin() function
+#fifth, create another 3d vector, which is is the Z vector times the previous variable
+#sixth, get a new point by substracting the point to the vector (literally, a point - a vector results in another point)
+#finally, append that point to a list, and then append that list to the nested list
